@@ -1,0 +1,35 @@
+<div class="container">
+
+<h2>
+  Register  semister course here
+</h2>
+  <br>
+
+  <% if @presenter.semisters.any? == true %>
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th>SemisterName</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody class="product-index">
+
+        <% @presenter.semisters.each do |semister| %>
+            <tr>
+              <td><%= semister.name %></td>
+              <td><a href="/students/semister_courses/<%= semister.id %>">Register course</a></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+  <% else %>
+     <div class="alert alert-danger">
+       No active semister found
+     </div>
+  <% end %>
+
+
+</div>
+
+

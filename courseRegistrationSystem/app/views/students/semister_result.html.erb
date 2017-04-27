@@ -1,0 +1,43 @@
+<div class="container">
+
+
+
+<% if @presenter.results.any?  %>
+
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>SemisterName</th>
+    <th>CourseName</th>
+    <th>StudentName</th>
+    <th>GPA</th>
+  </tr>
+  </thead>
+  <tbody class="product-index">
+
+<% @presenter.results.each do |result| %>
+    <tr>
+      <td><%= @presenter.semister.name %></td>
+      <td><%= result.course.name %></td>
+      <td><%= result.student.full_name %></td>
+      <td><%= result.gpa %></td>
+    </tr>
+<% end %>
+  <tr>
+    <td colspan="3">
+      CGPA
+    </td>
+    <td>
+      <%=  @presenter.results.sum(:gpa)/ @presenter.results.count %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<% else %>
+<div class="alert alert-danger">
+  No result for this semister
+</div>
+<% end %>
+
+
+</div>
