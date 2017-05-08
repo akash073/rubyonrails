@@ -23,7 +23,7 @@
     <orderEntry type="jdk" jdkName="rbenv: 2.1.5" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="erubis (vbundled(2.7), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/erubis-2.7.0) [path][gem]">
+      <library name="erubis (vbundled(2.7), /home/akash/Desktop/testProjects/rails test/rubyonrails/fcm_messaging/vendor/gems/erubis-2.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/erubis-2.7.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/gems/erubis-2.7.0/lib" />
@@ -42,7 +42,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="execjs (vbundled(2.7), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/execjs-2.7.0) [path][gem]">
+      <library name="execjs (vbundled(2.7), /home/akash/Desktop/testProjects/rails test/rubyonrails/fcm_messaging/vendor/gems/execjs-2.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/execjs-2.7.0/lib" />
         </CLASSES>
@@ -53,7 +53,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rake (vbundled(12.0), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rake-12.0.0) [path][gem]">
+      <library name="rake (vbundled(12.0), /home/akash/Desktop/testProjects/rails test/rubyonrails/fcm_messaging/vendor/gems/rake-12.0.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/rake-12.0.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/gems/rake-12.0.0/exe" />
@@ -68,7 +68,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rdoc (vbundled(4.3), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rdoc-4.3.0) [path][gem]">
+      <library name="rdoc (vbundled(4.3), /home/akash/Desktop/testProjects/rails test/rubyonrails/fcm_messaging/vendor/gems/rdoc-4.3.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/rdoc-4.3.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/gems/rdoc-4.3.0/lib" />
@@ -81,7 +81,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="uglifier (vbundled(3.2), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/uglifier-3.2.0) [path][gem]">
+      <library name="uglifier (vbundled(3.2), /home/akash/Desktop/testProjects/rails test/rubyonrails/fcm_messaging/vendor/gems/uglifier-3.2.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/uglifier-3.2.0/lib" />
         </CLASSES>
