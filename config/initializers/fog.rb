@@ -3,7 +3,7 @@ CarrierWave.configure do |config|
       :provider               => 'AWS',
       :aws_access_key_id      => 'AKIAJWQUM5V5DCSJFMTA',
       :aws_secret_access_key  => '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',
-      #:region => DEFAULT_REGION
+      :region => 'ap-south-1'
   }
   config.fog_directory  = 'helloakash'
   config.fog_public     = true
