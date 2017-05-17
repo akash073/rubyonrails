@@ -1,0 +1,29 @@
+<div class="container">
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Couses</h1>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>SemisterName</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @presenter.taken_courses.each do |course| %>
+      <tr>
+        <td><%= course.name %></td>
+        <td><%= course.decorate.semister_name %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+</div>

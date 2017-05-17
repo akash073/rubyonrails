@@ -1,0 +1,67 @@
+
+
+<div class="container">
+  <h1 class="well">Course of <span class="alert alert-info"><%=  @presenter.semister.name %></span>   </h1>
+  <% if @presenter.semister_courses.any? == true %>
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th>Course name</th>
+          <th>IsCourseTaken</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody class="product-index">
+        <!--Redering partial here -->
+        <% @presenter.semister_courses.each do |course| %>
+            <tr>
+              <td><%= course.name %></td>
+              <td><%= course.decorate.is_course_taken(current_student.id) %></td>
+              <% if course.decorate.is_course_taken(current_student.id) == false %>
+                  <td>
+                    <button class="btn btn-success" onclick="enroll(<%=course.id %>,this)">Enroll</button>
+                  </td>
+              <% end %>
+
+            </tr>
+
+        <% end %>
+        </tbody>
+      </table>
+
+      <div>
+        <a href="/students/registered_courses" class="btn btn-primary" >Submit</a>
+
+      </div>
+  <% end %>
+
+  <% if @presenter.semister_courses.any? == false %>
+      <div class="alert alert-danger">
+        No course has been given to semister
+      </div>
+  <% end %>
+
+</div>
+
+<script>
+
+
+  function enroll(id,element) {
+    console.log(element);
+    //$(element).attr('disable','disabled')
+    element.style.display="none";
+    element.parentElement.parentElement.style.background = "green";
+
+    $.ajax({
+      type: "GET",
+      url: '/students/register_course', //sumbits it to the given url of the form
+      data: { 'id' : id},
+      dataType: "JSON",
+      success:function(json){
+        console.log("success", json);
+      }
+    });
+  }
+
+</script>
+

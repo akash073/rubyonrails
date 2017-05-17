@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Starter UI, by Keen IO</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <style>
+    body{
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  </style>
+
+  <script>
+    //for dummy registration
+    $(function () {
+
+    })
+  </script>
+</head>
+<body class="application">
+
+<%= render "/layouts/navbar" %>
+
+<div class="container-fluid">
+  <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+  </div>
+  <br/>
+
+  <div class="row">
+
+      <%= yield %>
+  </div>
+
+  <br>
+  <%= render "/layouts/footer" %>
+
+</div>
+</body>
+</html>

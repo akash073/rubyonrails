@@ -1,0 +1,40 @@
+<div class="container">
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1 class="well">Registed course</h1>
+
+  <% if @presenter.registered_courses.any? == true %>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>RegisterCourseName</th>
+          <th>Semister Name</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @presenter.registered_courses.each do |course| %>
+            <tr>
+              <td><%= course.name %></td>
+              <td><%= course.decorate.semister_name  %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+  <% end %>
+
+  <% if @presenter.registered_courses.any? == false %>
+      <div class="alert alert-danger">
+        You have no registered course
+      </div>
+  <% end %>
+
+
+
+
+<br>
+</div>
