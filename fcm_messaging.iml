@@ -24,6 +24,19 @@
     <orderEntry type="jdk" jdkName="rbenv: 2.1.5" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
+      <library name="capybara (vbundled(2.14), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/capybara-2.14.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/capybara-2.14.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/capybara-2.14.0/.yard" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/capybara-2.14.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/capybara-2.14.0/.yard" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="carrierwave (vbundled(1.1), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/carrierwave-1.1.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/carrierwave-1.1.0/lib" />
@@ -437,6 +450,63 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="rspec-core (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-core-3.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-expectations (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-expectations-3.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-expectations-3.6.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-expectations-3.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-mocks (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-mocks-3.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-mocks-3.6.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-mocks-3.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-rails (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-rails-3.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-3.6.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-3.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-support (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-support-3.6.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-support-3.6.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-support-3.6.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="ruby_parser (vbundled(3.9), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/ruby_parser-3.9.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/ruby_parser-3.9.0/bin" />
@@ -481,6 +551,17 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/gems/uglifier-3.2.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xpath (vbundled(2.0), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/xpath-2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/xpath-2.0.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/xpath-2.0.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>

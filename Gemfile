@@ -50,3 +50,18 @@ gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rails_admin_rollincode', '~> 1.0'
 gem "devise"
 gem "haml-rails"
+
+
+group :development ,:test do
+  gem 'rspec-rails'
+end
+#rails g rspec:install
+# .rspec for global configration and spec_helper.rb for all config
+group :test do
+  gem 'database_cleaner' #in spec/rails_helper.rb require 'database_cleaner'
+  gem 'capybara' #in spec/rails_helper.rb require 'capybara/rspec'
+end
+#config.use_transactional_fixtures = false
+#bundle exec rake db:migrate RAILS_ENV=test
+#bundle exec rspec .
+#bundle exec rspec ./spec/models/album_spec.rb

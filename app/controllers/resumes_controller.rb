@@ -1,6 +1,6 @@
 class ResumesController < ApplicationController
   def index
-    #@resumes = Resume.all
+    @resumes = Resume.all
     #@exception=1/0
   end
 
