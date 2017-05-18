@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :menu_items
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'resumes/index'
 
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   post 's3file_upload/create'
 
   resources :resumes, only: [:index, :new, :create, :destroy]
-  root "resumes#index"
+  root "menu_items#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

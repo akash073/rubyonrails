@@ -60,8 +60,12 @@ end
 group :test do
   gem 'database_cleaner' #in spec/rails_helper.rb require 'database_cleaner'
   gem 'capybara' #in spec/rails_helper.rb require 'capybara/rspec'
+  #gem 'guard-rspec'
+  #gem 'factory_girl'
 end
 #config.use_transactional_fixtures = false
 #bundle exec rake db:migrate RAILS_ENV=test
 #bundle exec rspec .
 #bundle exec rspec ./spec/models/album_spec.rb
+
+#bundle exec rspec --pattern spec/controllers/*.rb

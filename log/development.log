@@ -6057,3 +6057,448 @@ Migrating to CreateAlbums (20170517112146)
             FROM sqlite_temp_master
             WHERE name='index_fcm_android_messagings_on_user_id' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 14:45:28 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  vendor/gems/activerecord-4.1.11/lib/active_record/migration.rb:389:in `check_pending!'
+  vendor/gems/activerecord-4.1.11/lib/active_record/migration.rb:377:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:20:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/engine.rb:514:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/application.rb:144:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (98.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMenuItems (20170518084219)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "menu_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "menu_item" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170518084219"]]
+  [1m[36m (108.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fcm_android_messagings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fcm_android_messagings_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 14:46:06 +0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActionController::RoutingError (uninitialized constant MenuItemController):
+  vendor/gems/activesupport-4.1.11/lib/active_support/inflector/methods.rb:238:in `const_get'
+  vendor/gems/activesupport-4.1.11/lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  vendor/gems/activesupport-4.1.11/lib/active_support/inflector/methods.rb:236:in `each'
+  vendor/gems/activesupport-4.1.11/lib/active_support/inflector/methods.rb:236:in `inject'
+  vendor/gems/activesupport-4.1.11/lib/active_support/inflector/methods.rb:236:in `constantize'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/gems/rack-pjax-1.0.0/lib/rack/pjax.rb:12:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+  vendor/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+  vendor/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundler/gems/remotipart-cd653ddc43bb/lib/remotipart/middleware.rb:32:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/gems/activerecord-4.1.11/lib/active_record/query_cache.rb:36:in `call'
+  vendor/gems/activerecord-4.1.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/gems/activerecord-4.1.11/lib/active_record/migration.rb:380:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/gems/activesupport-4.1.11/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/gems/railties-4.1.11/lib/rails/rack/logger.rb:20:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/activesupport-4.1.11/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/engine.rb:514:in `call'
+  vendor/gems/railties-4.1.11/lib/rails/application.rb:144:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/akash/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.9ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.5ms)
+  Rendered vendor/gems/actionpack-4.1.11/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (295.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 14:46:33 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[36mMenuItem Load (0.5ms)[0m  [1mSELECT "menu_items".* FROM "menu_items"[0m
+  Rendered menu_items/index.html.haml within layouts/application (64.4ms)
+Completed 200 OK in 2664ms (Views: 2629.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/menu_items.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/menu_items.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/s3file_upload.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:36 +0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:37 +0600
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:37 +0600
+
+
+Started GET "/assets/s3file_upload.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:37 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-05-18 14:46:37 +0600
+
+
+Started GET "/menu_items/new" for 127.0.0.1 at 2017-05-18 14:46:44 +0600
+Processing by MenuItemsController#new as HTML
+  Rendered menu_items/_form.html.haml (302.0ms)
+  Rendered menu_items/new.html.haml within layouts/application (335.1ms)
+Completed 200 OK in 1342ms (Views: 1331.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/menu_items" for 127.0.0.1 at 2017-05-18 14:46:50 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[35mMenuItem Load (0.4ms)[0m  SELECT "menu_items".* FROM "menu_items"
+  Rendered menu_items/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 1047ms (Views: 1040.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/menu_items/new" for 127.0.0.1 at 2017-05-18 14:47:17 +0600
+Processing by MenuItemsController#new as HTML
+  Rendered menu_items/_form.html.haml (12.2ms)
+  Rendered menu_items/new.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 5897ms (Views: 1168.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/menu_items" for 127.0.0.1 at 2017-05-18 14:47:34 +0600
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZnPfWqYaV49zaUtmspx+XCnXiIeSkz8gh9RQvKpYpI=", "menu_item"=>{"menu_item"=>""}, "commit"=>"Save"}
+  [1m[36m (2.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "menu_items" ("created_at", "menu_item", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-05-18 08:47:37.266136"], ["menu_item", ""], ["updated_at", "2017-05-18 08:47:37.266136"]]
+  [1m[36m (112.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3001/menu_items/1
+Completed 302 Found in 3479ms (ActiveRecord: 117.5ms)
+
+
+Started GET "/menu_items/1" for 127.0.0.1 at 2017-05-18 14:47:37 +0600
+Processing by MenuItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMenuItem Load (0.6ms)[0m  SELECT  "menu_items".* FROM "menu_items"  WHERE "menu_items"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered menu_items/show.html.haml within layouts/application (41.9ms)
+Completed 200 OK in 1232ms (Views: 1218.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:38 +0600
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:38 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/menu_items.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/s3file_upload.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/menu_items.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/s3file_upload.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-05-18 14:47:39 +0600
+
+
+Started GET "/menu_items" for 127.0.0.1 at 2017-05-18 14:50:50 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[36mMenuItem Load (0.5ms)[0m  [1mSELECT "menu_items".* FROM "menu_items"[0m
+  Rendered menu_items/index.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 1005ms (Views: 994.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/menu_items" for 127.0.0.1 at 2017-05-18 14:51:39 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[35mMenuItem Load (0.6ms)[0m  SELECT "menu_items".* FROM "menu_items"
+  Rendered menu_items/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 1080ms (Views: 1068.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/menu_items" for 127.0.0.1 at 2017-05-18 14:51:41 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[36mMenuItem Load (0.5ms)[0m  [1mSELECT "menu_items".* FROM "menu_items"[0m
+  Rendered menu_items/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 1063ms (Views: 1052.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/menu_items.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/s3file_upload.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:42 +0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started GET "/assets/menu_items.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started GET "/assets/s3file_upload.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:43 +0600
+
+
+Started DELETE "/menu_items/1" for 127.0.0.1 at 2017-05-18 14:51:46 +0600
+Processing by MenuItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mZnPfWqYaV49zaUtmspx+XCnXiIeSkz8gh9RQvKpYpI=", "id"=>"1"}
+  [1m[35mMenuItem Load (0.6ms)[0m  SELECT  "menu_items".* FROM "menu_items"  WHERE "menu_items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "menu_items" WHERE "menu_items"."id" = ?  [["id", 1]]
+  [1m[36m (150.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3001/menu_items
+Completed 302 Found in 191ms (ActiveRecord: 151.2ms)
+
+
+Started GET "/menu_items" for 127.0.0.1 at 2017-05-18 14:51:47 +0600
+Processing by MenuItemsController#index as HTML
+  [1m[35mMenuItem Load (0.6ms)[0m  SELECT "menu_items".* FROM "menu_items"
+  Rendered menu_items/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 1027ms (Views: 1021.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/menu_items.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/s3file_upload.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/menu_items.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/s3file_upload.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:48 +0600
+
+
+Started GET "/menu_items/new" for 127.0.0.1 at 2017-05-18 14:51:50 +0600
+Processing by MenuItemsController#new as HTML
+  Rendered menu_items/_form.html.haml (14.7ms)
+  Rendered menu_items/new.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 991ms (Views: 986.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/menu_items" for 127.0.0.1 at 2017-05-18 14:51:53 +0600
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZnPfWqYaV49zaUtmspx+XCnXiIeSkz8gh9RQvKpYpI=", "menu_item"=>{"menu_item"=>""}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  Rendered menu_items/_form.html.haml (15.0ms)
+  Rendered menu_items/new.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 1017ms (Views: 996.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/resumes.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/s3file_upload.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/menu_items.css?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/menu_items.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/resumes.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/s3file_upload.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-05-18 14:51:54 +0600
