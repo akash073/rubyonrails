@@ -116,6 +116,42 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="factory_girl (vbundled(3.0), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/factory_girl-3.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/gemfiles" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl-3.0.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="factory_girl_rails (vbundled(4.8), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/factory_girl_rails-4.8.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/pkg" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/tmp" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/gemfiles" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/pkg" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/tmp" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/features" />
+          <root url="file://$MODULE_DIR$/vendor/gems/factory_girl_rails-4.8.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="fission (vbundled(0.5), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/fission-0.5.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/gems/fission-0.5.0/bin" />
@@ -450,59 +486,13 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rspec-core (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-core-3.6.0) [path][gem]">
+      <library name="rspec-rails (vbundled(2.99), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-rails-2.99.0) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/exe" />
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-2.99.0/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/exe" />
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-core-3.6.0/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="rspec-expectations (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-expectations-3.6.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-expectations-3.6.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-expectations-3.6.0/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="rspec-mocks (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-mocks-3.6.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-mocks-3.6.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-mocks-3.6.0/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="rspec-rails (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-rails-3.6.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-3.6.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-3.6.0/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="rspec-support (vbundled(3.6), /home/akash/Desktop/projects/fcm_messaging/vendor/gems/rspec-support-3.6.0) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-support-3.6.0/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/gems/rspec-support-3.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/gems/rspec-rails-2.99.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -581,7 +571,6 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.5, rbenv: 2.1.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, rbenv: 2.1.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0521, rbenv: 2.1.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.10.1, rbenv: 2.1.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.5, rbenv: 2.1.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, rbenv: 2.1.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.1.11, rbenv: 2.1.5) [gem]" level="application" />

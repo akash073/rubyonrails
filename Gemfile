@@ -53,7 +53,8 @@ gem "haml-rails"
 
 
 group :development ,:test do
-  gem 'rspec-rails'
+  gem 'rspec-rails'#, '~> 2.0'
+  gem 'factory_girl_rails','2.0'
 end
 #rails g rspec:install
 # .rspec for global configration and spec_helper.rb for all config
@@ -62,6 +63,7 @@ group :test do
   gem 'capybara' #in spec/rails_helper.rb require 'capybara/rspec'
   #gem 'guard-rspec'
   #gem 'factory_girl'
+
 end
 #config.use_transactional_fixtures = false
 #bundle exec rake db:migrate RAILS_ENV=test
