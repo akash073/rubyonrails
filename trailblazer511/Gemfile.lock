@@ -59,6 +59,12 @@ GEM
     cells-erb (0.1.0)
       cells (~> 4.0)
       erbse (>= 0.1.1)
+    cells-haml (0.0.10)
+      cells (>= 4.0.1, <= 6.0.0)
+      haml (>= 4.1.0.beta.1)
+    cells-hamlit (0.2.0)
+      cells (~> 4.0)
+      hamlit
     cells-rails (0.0.8)
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
@@ -92,6 +98,10 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    hamlit (2.8.4)
+      temple (>= 0.8.0)
+      thor
+      tilt
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -200,6 +210,8 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   cells-erb
+  cells-haml
+  cells-hamlit
   cells-rails
   coffee-rails (~> 4.2)
   haml
