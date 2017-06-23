@@ -61,4 +61,4 @@ gem 'cells-haml'
 #operation gems
 gem "trailblazer-operation"
 gem "rspec"
-gem 'dry-validation' #special for dry validation
+#gem 'dry-validation' #special for dry validation
