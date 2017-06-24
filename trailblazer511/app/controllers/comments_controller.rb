@@ -24,9 +24,14 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    run Comment::Create # Comment::Create is an operation class.
+    result = Comment::Create.(params) # Comment::Create is an operation class.
+    if (result.success?)
+      redirect_to url_for(:controller => :comments, :action => :index)
+    end
 
-    redirect_to url_for(:controller => :comments, :action => :index)
+
+    result["contract.default"].errors.messages
+    render 'new'
   end
 
   # PATCH/PUT /comments/1

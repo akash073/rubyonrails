@@ -62,3 +62,4 @@ gem 'cells-haml'
 gem "trailblazer-operation"
 gem "rspec"
 #gem 'dry-validation' #special for dry validation
+gem "reform", "2.2.4"

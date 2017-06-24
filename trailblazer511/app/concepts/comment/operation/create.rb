@@ -8,10 +8,9 @@ class Comment::Create < Trailblazer::Operation
  #   property :name, validates: {presence: true}
  # end
   step Model( Comment, :new )
-  step :create
- # step Contract::Build()
-  #step Contract::Validate( key: :comment )
-  #step Contract::Persist( )
+  step Contract::Build( constant: Comment::Contract::Create )
+  step Contract::Validate()
+  step Contract::Persist()
 
   def create(options)
     name =  options["params"]["comment"]["name"]
