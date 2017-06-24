@@ -24,11 +24,9 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    run Comment::Create do |op|
-      return redirect_to op.model
-    end
+    run Comment::Create # Comment::Create is an operation class.
 
-    render action: :new
+    redirect_to url_for(:controller => :comments, :action => :index)
   end
 
   # PATCH/PUT /comments/1
